@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* define primary colors
+--------------------------------------*/
+/* define neutral colors
+--------------------------------------*/
+/* define typography
+--------------------------------------*/
+/* Reset
+--------------------------------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common Elements
+--------------------------------------*/
+hr {
+  border: 1px solid #2f415b;
+  margin: 20px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00fff7;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0 10px;
+  background-color: #0d192b;
+}
+
+.attribution {
+  color: #8bacda;
+  font-size: 11px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Card
+--------------------------------------*/
+.card {
+  width: 300px;
+  padding: 15px 15px 25px 15px;
+  background-color: #14253d;
+  color: #8bacda;
+  font-family: "Outfit", sans-serif;
+  border-radius: 20px;
+}
+.card h1 {
+  font-size: 1.5rem;
+  color: #00fff7;
+}
+.card p {
+  font-size: 18px;
+  color: #8bacda;
+  padding: 10px 0;
+}
+
+/* Ethereum Image
+--------------------------------------*/
+.card__img {
+  background: url("../images/image-equilibrium.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: box-shadow 0.5s ease;
+  border-radius: 15px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  opacity: 1;
+}
+
+.card__img:hover {
+  box-shadow: inset 0 0 0 2000px rgba(0, 255, 247, 0.5);
+}
+
+.card__img:hover .view {
+  opacity: 1;
+}
+
+.view {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  text-align: center;
+  padding-top: 40%;
+}
+
+/* Card Balance and Duration
+--------------------------------------*/
+.card__details {
+  display: flex;
+}
+.card__details .balance {
+  display: flex;
+  gap: 8px;
+  color: #00fff7;
+}
+.card__details .balance .ethereum-img {
+  width: 12px;
+}
+.card__details .duration {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.card__details .duration .clock-img {
+  width: 20px;
+}
+
+/* Card Person
+--------------------------------------*/
+.card__person {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card__person .person-img {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.card__person .person-img .avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=style.comp.css.map */

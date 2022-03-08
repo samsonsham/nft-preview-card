@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* define primary colors
+--------------------------------------*/
+$soft_blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$cyan_overlay: hsla(178, 100%, 50%, 0.5);
+
+/* define neutral colors
+--------------------------------------*/
+$very_dark_blue__main-bg: hsl(217, 54%, 11%);
+$very_dark_blue__card-bg: hsl(216, 50%, 16%);
+$very_dark_blue__line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+/* define typography
+--------------------------------------*/
+$para_font_size: 18px;
+$font_family_outfit: "Outfit", sans-serif;
+
+/* Reset
+--------------------------------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common Elements
+--------------------------------------*/
+hr {
+  border: 1px solid $very_dark_blue__line;
+  margin: 20px 0;
+}
+a {
+  color: $white;
+  text-decoration: none;
+}
+a:hover {
+  color: $cyan;
+  text-decoration: none;
+}

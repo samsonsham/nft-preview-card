@@ -1,0 +1,87 @@
+/* Card
+--------------------------------------*/
+.card {
+  width: 300px;
+  padding: 15px 15px 25px 15px;
+  background-color: $very_dark_blue__card-bg;
+  color: $soft_blue;
+  font-family: $font_family_outfit;
+  border-radius: 20px;
+  h1 {
+    font-size: 1.5rem;
+    color: $cyan;
+  }
+  p {
+    font-size: $para_font_size;
+    color: $soft_blue;
+    padding: 10px 0;
+  }
+}
+
+/* Ethereum Image
+--------------------------------------*/
+.card__img {
+  background: url("../images/image-equilibrium.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: box-shadow 0.5s ease;
+  border-radius: 15px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  opacity: 1;
+}
+.card__img:hover {
+  box-shadow: inset 0 0 0 2000px $cyan_overlay;
+}
+.card__img:hover .view {
+  opacity: 1;
+}
+.view {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  text-align: center;
+  padding-top: 40%;
+}
+
+/* Card Balance and Duration
+--------------------------------------*/
+.card__details {
+  display: flex;
+  .balance {
+    display: flex;
+    gap: 8px;
+    color: $cyan;
+    .ethereum-img {
+      width: 12px;
+    }
+  }
+  .duration {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    .clock-img {
+      width: 20px;
+    }
+  }
+}
+
+/* Card Person
+--------------------------------------*/
+.card__person {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .person-img {
+    border: 2px solid $white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+}
