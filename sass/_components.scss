@@ -49,6 +49,7 @@
 --------------------------------------*/
 .card__details {
   display: flex;
+  justify-content: space-between;
   .balance {
     display: flex;
     gap: 8px;
@@ -60,7 +61,6 @@
   .duration {
     display: flex;
     gap: 8px;
-    margin-left: auto;
     .clock-img {
       width: 20px;
     }
